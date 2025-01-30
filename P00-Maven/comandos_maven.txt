@@ -1,0 +1,26 @@
+Comandes de maven:
+
+mvn compile:
+
+De manera estandar ejecuta la fase process-resources(resources:resources) y compile(compiler:compile).
+
+process-resources hace una copia de los contenidos de la carpeta resources del codigo fuente en main a la carpeta target (/src/main/resources a /target).
+compile como su nombre lo indica compila el codigo fuente de main y crea los archivos .class en la caperta target (crea los .class en /target/classes/<nombre_paquete>).
+
+mvn test:
+
+Este comando ejecuta lo ya explicado en mvn compile y ademas las fases process-test-resources(resources:testResources), testCompile(compiler:testCompile) y test(surefire:test).
+Solo explicoque hacen las fases que no suceden en mvn compile.
+
+process-teset-resources es bastante redundante con respecto a process-resources, teniendo su misma función pero para los test, es decir, copia los recursos de estos a la carpeta target.
+(/src/test/resources a /target)
+
+testCompile es tambien similar a compile,teniendo la misma función que este ultimo, simplemente crea los archivos .class de los test en la carpeta target.
+(crea los .class en /target/test-classes/<nombre_paquete>)
+
+test se encarga de ejecutar los tests unitarios del programa, de los resultados de estos se guardan unos reportes en la carpeta target, tanto en formato .txt como en .xml.
+(se generan en /target/surefire-reports)
+
+mvn clean:
+
+Se encarga de eliminar los compilados y cualquier otro artefacto de la carpeta target para dejarla vacia
