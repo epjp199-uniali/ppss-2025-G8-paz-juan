@@ -1,0 +1,32 @@
+P00-maven1
+.
+├── pom.xml	-> Archivo de configuración de proyecto Maven (Project Object Model)
+└── src	-> Directorio de fuentes necesarias para construir el proyecto
+    ├── main
+    │   ├── java	-> Código fuente del proyecto (código java)
+    │   │   └── paquete1
+    │   │       ├── Matricula.java
+    │   │       └── Triangulo.java
+    │   └── resources	-> Ficheros adicionales usados por el codigo fuente
+    └── test
+        └── java	-> Código fuente de las pruebas del proyecto fuente (código java)
+            └── paquete1
+                ├── MatriculaTest.java
+                └── TrianguloTest.java
+P00-maven2
+.
+├── pom.xml	-> Archivo de configuración de proyecto Maven (Project Object Model)
+└── src	-> Directorio de fuentes necesarias para construir el proyecto
+    ├── main
+    │   ├── java	-> Código fuente del proyecto (código java)
+    │   │   └── paquete2
+    │   │       ├── Matricula.java
+    │   │       └── Triangulo.java
+    │   └── resources	-> Ficheros adicionales usados por el codigo fuente
+    └── test
+        └── java	-> Código fuente de las pruebas del proyecto fuente (código java)
+            └── paquete2
+                ├── MatriculaTest.java
+                └── TrianguloTest.java
+
+
