@@ -1,0 +1,28 @@
+EJERCICIO 3:
+
+- Comportamientos que pertenezcen al conjunto S:
+	(1) fechaValida(12,3,1971) -> true
+	(2) fechaValida(31,8,1971) -> true
+	(3) fechaValida(29,2,2000) -> true
+
+- Comportamientos que pertenezcen al conjunto P:	
+    (1) fechaValida(31,8,1971) -> false
+	(2) fechaValida(12,3,1971) -> true
+
+- Comportamientos que pertenezcen a T
+   (1) fechaValida(29,2,2020) -> true
+
+
+El proceso de AUTOMATIZACIÓN de las pruebas es posterior al proceso de diseño y consiste en:
+	(1) Ejecución de Pruebas
+	(2) Generación de Informes de Pruebas
+
+
+En el proyecto Maven simpleMavenProject,
+
+el subproceso (1) de la automatización lo hemos realizado porque:
+	Todo el codigo de java en la carpeta "src/test/java" y se ejecutan con el comando "mvn test"
+
+
+el subproceso (2) de la automatización lo hemos realizado porque:
+    Se demuestra en la carpetade reportes "target/surefire-reports/"
